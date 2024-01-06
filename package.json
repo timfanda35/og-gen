@@ -13,9 +13,17 @@
   "main": "./extension.js",
   "contributes": {
     "commands": [{
-      "command": "og-gen.helloWorld",
-      "title": "Hello World"
-    }]
+      "command": "og-gen.genOGImageFromCurrentFile",
+      "title": "og-gen: Generate OG Image from current File"
+    }],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "og-gen.genOGImageFromCurrentFile",
+          "when": "resourceLangId == markdown"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint .",
