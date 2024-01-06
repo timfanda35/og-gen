@@ -11,3 +11,21 @@ It will detect current file in active editor and generate OG Image under `static
 ## Development
 
 Press `F5` to run debug window.
+
+## Package
+
+Install [vsce](https://github.com/microsoft/vscode-vsce)
+
+```bash
+npm install -g @vscode/vsce
+```
+
+```bash
+make package
+```
+
+## Install vsix
+
+```bash
+make install
+```
